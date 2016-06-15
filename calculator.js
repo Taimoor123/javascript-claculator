@@ -16,6 +16,8 @@ function nine() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "9";
+        flag = false;
+        num1 = "9";
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -30,6 +32,8 @@ function eight() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "8";
+        flag = false;
+        num1 = 8;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -44,6 +48,8 @@ function seven() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "7";
+        flag = false;
+        num1 = 7;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -58,6 +64,8 @@ function six() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "6";
+        flag = false;
+        num1 = 6;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -72,6 +80,8 @@ function five() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "5";
+        flag = false;
+        num1 = 5;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -86,6 +96,8 @@ function four() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "4";
+        flag = false;
+        num1 = 4;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -100,6 +112,8 @@ function three() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "3";
+        flag = false;
+        num1 = 3;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -114,6 +128,8 @@ function two() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "2";
+        flag = false;
+        num1 = 2;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -128,6 +144,8 @@ function one() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "1";
+        flag = false;
+        num1 = 1;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -142,6 +160,8 @@ function zero() {
     }
     else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
         document.getElementById("userInput").value = "0";
+        flag = false;
+        num1 = 0;
     }
     else {
         num1 = document.getElementById("userInput").value;
@@ -153,6 +173,11 @@ function zero() {
 function decimalPoint() {
     if(document.getElementById("userInput").value == "0") {
         document.getElementById("userInput").value = ".";
+    }
+    else if ((document.getElementById("userInput").value != "0") && (flag == true)) {
+        document.getElementById("userInput").value = "0";
+        flag = false;
+        num1 = ".";
     }
     else {
         num1 = document.getElementById("userInput").value;
